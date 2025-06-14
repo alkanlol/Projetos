@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Ocorrencia.Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container header-container">
+    <h1>Ocorrencia.Web</h1>
+    <nav>
+      <a href="index.html" class="btn">Voltar</a>
+    </nav>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="container">
+    <h2>Entrar na sua conta</h2>
+
+    <!-- Formulário envia para login.php via POST -->
+    <form id="formLogin" class="formulario login-form" action="login.php" method="POST">
+      <input type="text" name="loginUsuario" placeholder="Usuário ou E-mail" required />
+      <input type="password" name="loginSenha" placeholder="Senha" required />
+      <button type="submit" class="btn-primary">Entrar</button>
+      <p class="link-cadastro">Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+    </form>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2025 Ocorrencia.Web - Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

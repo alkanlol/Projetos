@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Ocorrencia.Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container header-container">
+    <h1>Ocorrencia.Web</h1>
+    <nav>
+      <a href="index.html" class="btn">Voltar</a>
+    </nav>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="container">
+    <h2>Crie sua conta</h2>
+    <form id="formCadastro" class="formulario cadastro-form" action="cadastro.php" method="POST">
+      <input type="text" name="cadastroNome" id="cadastroNome" placeholder="Nome completo" required />
+      <input type="email" name="cadastroEmail" id="cadastroEmail" placeholder="E-mail" required />
+      <input type="text" name="cadastroTelefone" id="cadastroTelefone" placeholder="Telefone" required />
+      <input type="text" name="cadastroCPF" id="cadastroCPF" placeholder="CPF" required />
+      <input type="text" name="cadastroEndereco" id="cadastroEndereco" placeholder="Endereço" required />
+      <input type="text" name="cadastroCidade" id="cadastroCidade" placeholder="Cidade" required />
+      <input type="text" name="cadastroEstado" id="cadastroEstado" placeholder="Estado" required />
+      <input type="password" name="cadastroSenha" id="cadastroSenha" placeholder="Senha" required />
+      <input type="password" name="cadastroConfirmaSenha" id="cadastroConfirmaSenha" placeholder="Confirme a senha" required />
+      <button type="submit" class="btn-primary">Cadastrar</button>
+      <p class="link-cadastro">Já tem conta? <a href="login.html">Entrar</a></p>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2025 Ocorrencia.Web - Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
