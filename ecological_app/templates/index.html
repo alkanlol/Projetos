@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ecological Footprint 2023</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+    <h1>Estatísticas do Dataset - Global Ecological Footprint 2023</h1>
+
+    <div class="container">
+        <h2>Média do Índice de Desenvolvimento Humano (HDI): {{ media_hdi }}</h2>
+        <h2>HDI médio dos países com população &gt; 10 milhões: {{ hdi_maior_10mi }}</h2>
+
+        <h2>Histograma - PIB per Capita</h2>
+        <img src="{{ url_for('static', filename='plots/histograma_gdp.png') }}" alt="Histograma PIB per Capita" />
+
+        <h2>Correlação entre HDI e PIB per Capita</h2>
+        <img src="{{ url_for('static', filename='plots/correlacao_hdi_gdp.png') }}" alt="Correlação HDI e PIB per Capita" />
+
+        <h2>Distribuição da População por Região</h2>
+        <img src="{{ url_for('static', filename='plots/populacao_regiao.png') }}" alt="População por Região" />
+    </div>
+</body>
+</html>
