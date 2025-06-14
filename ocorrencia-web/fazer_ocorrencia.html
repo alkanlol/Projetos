@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Ocorrência - Ocorrencia.Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-container">
+        <h1>Ocorrencia.Web</h1>
+        <nav>
+            <a href="ver_ocorrencias.html" class="btn">Ver Ocorrências</a>
+            <button onclick="logout()" class="btn-logout">Logout</button>
+        </nav>
+    </div>
+</header>
+
+<main class="hero">
+    <div class="container">
+        <h2>Registrar Nova Ocorrência</h2>
+        <form action="#" method="post" class="formulario" id="formOcorrencia">
+            <input type="text" id="tituloOcorrencia" placeholder="Título da Ocorrência" required>
+            <textarea id="descricaoOcorrencia" placeholder="Descrição detalhada..." rows="6" required></textarea>
+            <input type="file" id="imagemOcorrencia" accept="image/*">
+            <button type="submit" class="btn-primary">Enviar Ocorrência</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Ocorrencia.Web - Todos os direitos reservados</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
